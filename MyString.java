@@ -32,7 +32,7 @@ public class MyString {
         String subStr;
         for (int i = 0; i <= str1.length() - (str2.length()); i++){
             subStr = str1.substring(i,i + str2.length());
-            if (subStr == str2){
+            if (subStr.equals(str2)){
                 return true;
             }
         }
