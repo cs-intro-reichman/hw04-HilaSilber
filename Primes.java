@@ -23,7 +23,7 @@ public class Primes {
                 System.out.println(i);
             }
         }
-        int p = 100 * count / (index - 1);
+        int p = 100 * count / (index);
         System.out.printf("There are %d primes between 2 and %d (%d%% are primes)\n",
                   count, index, p);
 
