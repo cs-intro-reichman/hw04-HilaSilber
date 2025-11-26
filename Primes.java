@@ -23,8 +23,9 @@ public class Primes {
                 System.out.println(i);
             }
         }
-        int p = 100 * count / (index);
-        System.out.println("There are "+ count+" primes between 2 and "+index+" (" +p+"% are primes)");
+        int p = 100 * count / (index - 1);
+        System.out.printf("There are %d primes between 2 and %d (%d%% are primes)\n",
+                  count, index, p);
 
     }
 }
