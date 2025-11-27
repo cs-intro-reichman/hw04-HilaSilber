@@ -32,8 +32,9 @@ public class KeywordsDetector {
             String[] words = sen.split(" ");
 
             for (String k : keywords){
+                String kLower = k.toLowerCase();
                 for (String word : words){
-                    if (word.equals(k)){
+                    if (word.equals(kLower)){
                         flag = true;
                         System.out.println(sentences[i]);
                         break;
