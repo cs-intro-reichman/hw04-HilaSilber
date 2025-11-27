@@ -28,6 +28,7 @@ public class KeywordsDetector {
             flag = false;
             sen = sentences[i];
             sen = sen.toLowerCase();
+            sen = sen.replaceAll("[^a-z ]", "");
             String[] words = sen.split(" ");
 
             for (String k : keywords){
